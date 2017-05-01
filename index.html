@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRPOS</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">Brand</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a> </li>
+        <li><a href="#">Link</a> </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a> </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a> </li>
+            <li><a href="#">Another action</a> </li>
+            <li><a href="#">Something else here</a> </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- HEADER -->
+<header>
+</header>
+<!-- / HEADER --> 
+
+<!--  SECTION-1 -->
+<section>
+  <!-- /container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 page-header text-center">
+        <h2>PRPOS</h2>
+      </div>
+    </div>
+    <div class="row">
+    <div class="form-group col-lg-12">
+	  <label for="idem">
+	  <input type="checkbox" class="form-check-input" id="idem" name="idem"> ¿El Responsable de Pago es el Beneficiario?
+	</label></div>
+	<div class="col-xs-6 col-lg-6" style="border-bottom: 2px solid lightgray;">
+	  <h3>Beneficiario</h3>
+	  <form role="form" id="beneficiario" class="text-center">
+		<div class="form-group col-lg-6">
+		  <label for="doc1">Documento</label>
+		  <input type="number" class="form-control" id="doc1" name="doc1" placeholder="Documento">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nac1">Fecha de Nacimiento</label>
+		  <input type="date" class="form-control" id="nac1" name="nac1">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom1">Primer Nombre</label>
+		  <input type="text" class="form-control" id="nom1" name="nom1" placeholder="Primer Nombre">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom2">Segundo Nombre</label>
+		  <input type="text" class="form-control" id="nom2" name="nom2" placeholder="Segundo Nombre">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom3">Primer Apellido</label>
+		  <input type="text" class="form-control" id="nom3" name="nom3" placeholder="Primer Apellido">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom4">Segundo Apellido</label>
+		  <input type="text" class="form-control" id="nom4" name="nom4" placeholder="Segundo Apellido">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="tel1">Teléfono</label>
+		  <input type="tel" class="form-control" id="tel1" name="tel1" placeholder="Teléfono">
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="email1">Email</label>
+		  <input type="email" class="form-control" id="email1" name="email1" placeholder="Email">
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="dir1a">Calle</label>
+		  <input type="text" class="form-control" id="dir1a" name="dir1a" placeholder="Calle">
+		  <span class="help-block" style="display: none;">Debe ingresar la calle.</span></div>
+		<div class="form-group col-lg-3">
+		  <label for="dir1b">Nº</label>
+		  <input type="number" class="form-control" id="dir1b" name="dir1b" placeholder="Nº">
+		  <span class="help-block" style="display: none;">Debe ingresar el número de puerta.</span></div>
+		<div class="form-group col-lg-3">
+		  <label for="dir1c">Apto</label>
+		  <input type="text" class="form-control" id="dir1c" name="dir1c" placeholder="Apto"></div>
+		<div class="form-group col-lg-12">
+		  <label for="dir1d">Esquina</label>
+		  <input type="text" class="form-control" id="dir1d" name="dir1d" placeholder="Esquina">
+		  <span class="help-block" style="display: none;">Debe ingresar la esquina.</span></div>
+	  <div class="form-group col-lg-6">
+		  <label for="pis1">Prestador Integral de Salud</label>
+		  <select class="form-control" id="pis1" name="pis1">
+			<option>ASOCIACIÓN ESPAÑOLA</option>
+			<option>CASA DE GALICIA</option>
+			<option>CÍRCULO CATÓLICO</option>
+			<option>CUDAM</option>
+			<option>MÉDICA URUGUAYA</option>
+			<option>MILITAR</option>
+			<option>POLICIAL</option>
+			<option>EVANGÉLICO</option>
+			<option>BRITÁNICO</option>
+			<option>ITALIANO</option>
+			<option>UNIVERSAL</option>
+			<option>SEGURO AMERICANO</option>
+			<option>MEDICINA PERSONALIZADA</option>
+			<option>BLUE CROSS</option>
+			<option>ASSE</option>
+			<option>SUMMUM</option>
+			<option>CASMU</option>
+			<option>SMI</option>
+			<option>COSEM</option>
+			<option>GREMCA</option>
+		  </select></div>
+		<div class="form-group col-lg-6">
+		  <label for="eme1">Emergencia</label>
+		  <select class="form-control" id="eme1" name="eme1">
+			<option>UCM</option>
+			<option>SEMM</option>
+			<option>SUAT</option>
+			<option>1727</option>
+			<option>EMERGENCIA UNO</option>
+		  </select>
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+	  </form>
+	</div>
+	<div class="col-xs-6 col-lg-6" style="border-left: 2px solid lightgray; border-bottom: 2px solid lightgray;">
+	  <h3>Responsable de Pago</h3>
+	  <form role="form" id="responsable" class="text-center">
+		<div class="form-group col-lg-6">
+		  <label for="doc2">Documento</label>
+		  <input type="number" class="form-control" id="doc2" name="doc2" placeholder="Documento">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nac2">Fecha de Nacimiento</label>
+		  <input type="date" class="form-control" id="nac2" name="nac2">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom5">Primer Nombre</label>
+		  <input type="text" class="form-control" id="nom5" name="nom9" placeholder="Primer Nombre">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom6">Segundo Nombre</label>
+		  <input type="text" class="form-control" id="nom6" name="nom6" placeholder="Segundo Nombre">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom7">Primer Apellido</label>
+		  <input type="text" class="form-control" id="nom7" name="nom7" placeholder="Primer Apellido">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="nom8">Segundo Apellido</label>
+		  <input type="text" class="form-control" id="nom8" name="nom8" placeholder="Segundo Apellido">
+		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="tel2">Teléfono</label>
+		  <input type="tel" class="form-control" id="tel2" name="tel2" placeholder="Teléfono">
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="email2">Email</label>
+		  <input type="email" class="form-control" id="email2" name="email2" placeholder="Email">
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="dir2a">Calle</label>
+		  <input type="text" class="form-control" id="dir2a" name="dir2a" placeholder="Calle">
+		  <span class="help-block" style="display: none;">Debe ingresar la calle.</span></div>
+		<div class="form-group col-lg-3">
+		  <label for="dir2b">Nº</label>
+		  <input type="number" class="form-control" id="dir2b" name="dir2b" placeholder="Nº">
+		  <span class="help-block" style="display: none;">Debe ingresar el número de puerta.</span></div>
+		<div class="form-group col-lg-3">
+		  <label for="dir2c">Apto</label>
+		  <input type="text" class="form-control" id="dir2c" name="dir2c" placeholder="Apto"></div>
+		<div class="form-group col-lg-12">
+		  <label for="dir2d">Esquina</label>
+		  <input type="text" class="form-control" id="dir2d" name="dir2d" placeholder="Esquina">
+		  <span class="help-block" style="display: none;">Debe ingresar la esquina.</span></div>
+		<div class="form-group col-lg-6">
+		  <label for="pis2">Prestador Integral de Salud</label>
+		  <select class="form-control" id="pis2" name="pis2">
+			<option>ASOCIACIÓN ESPAÑOLA</option>
+			<option>CASA DE GALICIA</option>
+			<option>CÍRCULO CATÓLICO</option>
+			<option>CUDAM</option>
+			<option>MÉDICA URUGUAYA</option>
+			<option>MILITAR</option>
+			<option>POLICIAL</option>
+			<option>EVANGÉLICO</option>
+			<option>BRITÁNICO</option>
+			<option>ITALIANO</option>
+			<option>UNIVERSAL</option>
+			<option>SEGURO AMERICANO</option>
+			<option>MEDICINA PERSONALIZADA</option>
+			<option>BLUE CROSS</option>
+			<option>ASSE</option>
+			<option>SUMMUM</option>
+			<option>CASMU</option>
+			<option>SMI</option>
+			<option>COSEM</option>
+			<option>GREMCA</option>
+		  </select></div>
+		<div class="form-group col-lg-6">
+		  <label for="eme2">Emergencia</label>
+		  <select class="form-control" id="eme2" name="eme2">
+			<option>UCM</option>
+			<option>SEMM</option>
+			<option>SUAT</option>
+			<option>1727</option>
+			<option>EMERGENCIA UNO</option>
+		  </select>
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		</form>
+    </div>
+    <div class="col-xs-6 col-lg-6">
+	  <h3>Productos</h3>
+	    <form role="form" id="productos" class="text-center">
+	    <div class="form-group col-lg-10">
+		  <label for="prod1">Sanatorio</label>
+		  <select class="form-control" id="prod1" name="prod1">
+			<option>[SELECCIONAR PRODUCTO]</option>
+			<option>SANATORIO 3</option>
+			<option>SANATORIO 5</option>
+		  </select>
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+	    <div class="form-group col-lg-2">
+		  <label for="horp1">Horas</label>
+		  <select class="form-control" id="horp1" name="horp1">
+			<option>8</option>
+			<option>12</option>
+			<option>16</option>
+			<option>24</option>
+		  </select></div>
+	    <div class="form-group col-lg-10">
+		  <label for="prod2">Domicilio</label>
+		  <select class="form-control" id="prod2" name="prod2">
+			<option>[SELECCIONAR PRODUCTO]</option>
+		  </select></div>
+	    <div class="form-group col-lg-2">
+		  <label for="horp2">Horas</label>
+		  <select class="form-control" id="horp2" name="horp2">
+			<option>8</option>
+			<option>12</option>
+			<option>16</option>
+			<option>24</option>
+		  </select></div>
+	  </form>
+    </div>
+    <div class="col-xs-6 col-lg-6" style="border-left: 2px solid lightgray;">
+	  <h3>Medio de Pago</h3>
+	    <form role="form" id="productos" class="text-center">
+	    <div class="form-group col-lg-12">
+		  <label for="pago">Medio de Pago</label>
+		  <select class="form-control" id="inst" name="inst">
+			<option>[SELECCIONAR MEDIO DE PAGO]</option>
+			<option>TARJETA</option>
+			<option>BANCO</option>
+		  </select>
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+	    <div class="form-group col-lg-12">
+	      <label for="inst">Institución</label>
+	      <select class="form-control" id="inst" name="inst">
+			<option>[SELECCIONAR INSTITUCIÓN]</option>
+		  </select>
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		<div class="form-group col-lg-12">
+	      <label for="num">Número de Tarjeta / Cuenta</label>
+		  <input type="number" class="form-control" id="num" name="num" placeholder="Número">
+		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+	  </form>
+    </div>
+    <div class="col-xs-6 col-lg-12">
+    <br>
+    <button type="button" class="btn btn-primary center-block" id="btn" name="btn">Confirmar</button>
+    <br>
+    </div>
+  </div>
+</div>
+  <!-- / CONTAINER--> 
+</section>
+<div class="well"> </div>
+
+<!-- FOOTER -->
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- / FOOTER -->
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script src="js/my.js"></script>
+<script src="js/jquery.soap.js"></script> 
+</body>
+</html>
