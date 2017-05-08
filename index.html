@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
 <title>PRPOS</title>
 
 <!-- Bootstrap -->
@@ -69,6 +70,9 @@
       </div>
     </div>
     <div class="row">
+		<div class="form-group col-lg-12">
+			<span id="estado" name="estado" class="label label-info">PULSO</span>
+		</div>
     <div class="form-group col-lg-12">
 	  <label for="idem">
 	  <input type="checkbox" class="form-check-input" id="idem" name="idem"> ¿El Responsable de Pago es el Beneficiario?
@@ -78,85 +82,53 @@
 	  <form role="form" id="beneficiario" class="text-center">
 		<div class="form-group col-lg-6">
 		  <label for="doc1">Documento</label>
-		  <input type="number" class="form-control" id="doc1" name="doc1" placeholder="Documento">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="number" class="form-control" id="doc1" name="doc1" placeholder="Documento"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nac1">Fecha de Nacimiento</label>
-		  <input type="date" class="form-control" id="nac1" name="nac1">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="date" class="form-control" id="nac1" name="nac1"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom1">Primer Nombre</label>
-		  <input type="text" class="form-control" id="nom1" name="nom1" placeholder="Primer Nombre">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="text" class="form-control" id="nom1" name="nom1" placeholder="Primer Nombre"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom2">Segundo Nombre</label>
-		  <input type="text" class="form-control" id="nom2" name="nom2" placeholder="Segundo Nombre">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="text" class="form-control" id="nom2" name="nom2" placeholder="Segundo Nombre"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom3">Primer Apellido</label>
-		  <input type="text" class="form-control" id="nom3" name="nom3" placeholder="Primer Apellido">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="text" class="form-control" id="nom3" name="nom3" placeholder="Primer Apellido"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom4">Segundo Apellido</label>
-		  <input type="text" class="form-control" id="nom4" name="nom4" placeholder="Segundo Apellido">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
-		<div class="form-group col-lg-6">
+		  <input type="text" class="form-control" id="nom4" name="nom4" placeholder="Segundo Apellido"></div>
+		<div class="form-group col-lg-2">
+		  <label for="sex1">Sexo</label>
+		  <select class="form-control" id="sex1" name="sex1">
+			<option value="0"></option>
+			<option value="M">M</option>
+			<option value="F">F</option>
+		  </select></div>
+		<div class="form-group col-lg-4">
 		  <label for="tel1">Teléfono</label>
-		  <input type="tel" class="form-control" id="tel1" name="tel1" placeholder="Teléfono">
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  <input type="tel" class="form-control" id="tel1" name="tel1" placeholder="Teléfono"></div>
 		<div class="form-group col-lg-6">
 		  <label for="email1">Email</label>
-		  <input type="email" class="form-control" id="email1" name="email1" placeholder="Email">
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  <input type="email" class="form-control" id="email1" name="email1" placeholder="Email"></div>
 		<div class="form-group col-lg-6">
 		  <label for="dir1a">Calle</label>
-		  <input type="text" class="form-control" id="dir1a" name="dir1a" placeholder="Calle">
-		  <span class="help-block" style="display: none;">Debe ingresar la calle.</span></div>
+		  <input type="text" class="form-control" id="dir1a" name="dir1a" placeholder="Calle"></div>
 		<div class="form-group col-lg-3">
 		  <label for="dir1b">Nº</label>
-		  <input type="number" class="form-control" id="dir1b" name="dir1b" placeholder="Nº">
-		  <span class="help-block" style="display: none;">Debe ingresar el número de puerta.</span></div>
+		  <input type="number" class="form-control" id="dir1b" name="dir1b" placeholder="Nº"></div>
 		<div class="form-group col-lg-3">
 		  <label for="dir1c">Apto</label>
 		  <input type="text" class="form-control" id="dir1c" name="dir1c" placeholder="Apto"></div>
 		<div class="form-group col-lg-12">
 		  <label for="dir1d">Esquina</label>
-		  <input type="text" class="form-control" id="dir1d" name="dir1d" placeholder="Esquina">
-		  <span class="help-block" style="display: none;">Debe ingresar la esquina.</span></div>
+		  <input type="text" class="form-control" id="dir1d" name="dir1d" placeholder="Esquina"></div>
 	  <div class="form-group col-lg-6">
 		  <label for="pis1">Prestador Integral de Salud</label>
-		  <select class="form-control" id="pis1" name="pis1">
-			<option>ASOCIACIÓN ESPAÑOLA</option>
-			<option>CASA DE GALICIA</option>
-			<option>CÍRCULO CATÓLICO</option>
-			<option>CUDAM</option>
-			<option>MÉDICA URUGUAYA</option>
-			<option>MILITAR</option>
-			<option>POLICIAL</option>
-			<option>EVANGÉLICO</option>
-			<option>BRITÁNICO</option>
-			<option>ITALIANO</option>
-			<option>UNIVERSAL</option>
-			<option>SEGURO AMERICANO</option>
-			<option>MEDICINA PERSONALIZADA</option>
-			<option>BLUE CROSS</option>
-			<option>ASSE</option>
-			<option>SUMMUM</option>
-			<option>CASMU</option>
-			<option>SMI</option>
-			<option>COSEM</option>
-			<option>GREMCA</option>
-		  </select></div>
+		  <select class="form-control" id="pis1" name="pis1"></select></div>
 		<div class="form-group col-lg-6">
 		  <label for="eme1">Emergencia</label>
-		  <select class="form-control" id="eme1" name="eme1">
-			<option>UCM</option>
-			<option>SEMM</option>
-			<option>SUAT</option>
-			<option>1727</option>
-			<option>EMERGENCIA UNO</option>
-		  </select>
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  <select class="form-control" id="eme1" name="eme1"></select></div>
 	  </form>
 	</div>
 	<div class="col-xs-6 col-lg-6" style="border-left: 2px solid lightgray; border-bottom: 2px solid lightgray;">
@@ -164,85 +136,53 @@
 	  <form role="form" id="responsable" class="text-center">
 		<div class="form-group col-lg-6">
 		  <label for="doc2">Documento</label>
-		  <input type="number" class="form-control" id="doc2" name="doc2" placeholder="Documento">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="number" class="form-control" id="doc2" name="doc2" placeholder="Documento"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nac2">Fecha de Nacimiento</label>
-		  <input type="date" class="form-control" id="nac2" name="nac2">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="date" class="form-control" id="nac2" name="nac2"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom5">Primer Nombre</label>
-		  <input type="text" class="form-control" id="nom5" name="nom9" placeholder="Primer Nombre">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="text" class="form-control" id="nom5" name="nom9" placeholder="Primer Nombre"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom6">Segundo Nombre</label>
-		  <input type="text" class="form-control" id="nom6" name="nom6" placeholder="Segundo Nombre">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="text" class="form-control" id="nom6" name="nom6" placeholder="Segundo Nombre"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom7">Primer Apellido</label>
-		  <input type="text" class="form-control" id="nom7" name="nom7" placeholder="Primer Apellido">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
+		  <input type="text" class="form-control" id="nom7" name="nom7" placeholder="Primer Apellido"></div>
 		<div class="form-group col-lg-6">
 		  <label for="nom8">Segundo Apellido</label>
-		  <input type="text" class="form-control" id="nom8" name="nom8" placeholder="Segundo Apellido">
-		  <span class="help-block" style="display: none;">Please enter your name.</span></div>
-		<div class="form-group col-lg-6">
+		  <input type="text" class="form-control" id="nom8" name="nom8" placeholder="Segundo Apellido"></div>
+		<div class="form-group col-lg-2">
+		  <label for="sex2">Sexo</label>
+		  <select class="form-control" id="sex2" name="sex2">
+			<option value="0"></option>
+			<option value="M">M</option>
+			<option value="F">F</option>
+		  </select></div>
+		<div class="form-group col-lg-4">
 		  <label for="tel2">Teléfono</label>
-		  <input type="tel" class="form-control" id="tel2" name="tel2" placeholder="Teléfono">
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  <input type="tel" class="form-control" id="tel2" name="tel2" placeholder="Teléfono"></div>
 		<div class="form-group col-lg-6">
 		  <label for="email2">Email</label>
-		  <input type="email" class="form-control" id="email2" name="email2" placeholder="Email">
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  <input type="email" class="form-control" id="email2" name="email2" placeholder="Email"></div>
 		<div class="form-group col-lg-6">
 		  <label for="dir2a">Calle</label>
-		  <input type="text" class="form-control" id="dir2a" name="dir2a" placeholder="Calle">
-		  <span class="help-block" style="display: none;">Debe ingresar la calle.</span></div>
+		  <input type="text" class="form-control" id="dir2a" name="dir2a" placeholder="Calle"></div>
 		<div class="form-group col-lg-3">
 		  <label for="dir2b">Nº</label>
-		  <input type="number" class="form-control" id="dir2b" name="dir2b" placeholder="Nº">
-		  <span class="help-block" style="display: none;">Debe ingresar el número de puerta.</span></div>
+		  <input type="number" class="form-control" id="dir2b" name="dir2b" placeholder="Nº"></div>
 		<div class="form-group col-lg-3">
 		  <label for="dir2c">Apto</label>
 		  <input type="text" class="form-control" id="dir2c" name="dir2c" placeholder="Apto"></div>
 		<div class="form-group col-lg-12">
 		  <label for="dir2d">Esquina</label>
-		  <input type="text" class="form-control" id="dir2d" name="dir2d" placeholder="Esquina">
-		  <span class="help-block" style="display: none;">Debe ingresar la esquina.</span></div>
+		  <input type="text" class="form-control" id="dir2d" name="dir2d" placeholder="Esquina"></div>
 		<div class="form-group col-lg-6">
 		  <label for="pis2">Prestador Integral de Salud</label>
-		  <select class="form-control" id="pis2" name="pis2">
-			<option>ASOCIACIÓN ESPAÑOLA</option>
-			<option>CASA DE GALICIA</option>
-			<option>CÍRCULO CATÓLICO</option>
-			<option>CUDAM</option>
-			<option>MÉDICA URUGUAYA</option>
-			<option>MILITAR</option>
-			<option>POLICIAL</option>
-			<option>EVANGÉLICO</option>
-			<option>BRITÁNICO</option>
-			<option>ITALIANO</option>
-			<option>UNIVERSAL</option>
-			<option>SEGURO AMERICANO</option>
-			<option>MEDICINA PERSONALIZADA</option>
-			<option>BLUE CROSS</option>
-			<option>ASSE</option>
-			<option>SUMMUM</option>
-			<option>CASMU</option>
-			<option>SMI</option>
-			<option>COSEM</option>
-			<option>GREMCA</option>
-		  </select></div>
+		  <select class="form-control" id="pis2" name="pis2"></select></div>
 		<div class="form-group col-lg-6">
 		  <label for="eme2">Emergencia</label>
-		  <select class="form-control" id="eme2" name="eme2">
-			<option>UCM</option>
-			<option>SEMM</option>
-			<option>SUAT</option>
-			<option>1727</option>
-			<option>EMERGENCIA UNO</option>
-		  </select>
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  <select class="form-control" id="eme2" name="eme2"></select></div>
 		</form>
     </div>
     <div class="col-xs-6 col-lg-6">
@@ -254,8 +194,7 @@
 			<option>[SELECCIONAR PRODUCTO]</option>
 			<option>SANATORIO 3</option>
 			<option>SANATORIO 5</option>
-		  </select>
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  </select></div>
 	    <div class="form-group col-lg-2">
 		  <label for="horp1">Horas</label>
 		  <select class="form-control" id="horp1" name="horp1">
@@ -288,19 +227,21 @@
 			<option>[SELECCIONAR MEDIO DE PAGO]</option>
 			<option>TARJETA</option>
 			<option>BANCO</option>
-		  </select>
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  </select></div>
 	    <div class="form-group col-lg-12">
 	      <label for="inst">Institución</label>
 	      <select class="form-control" id="inst" name="inst">
 			<option>[SELECCIONAR INSTITUCIÓN]</option>
-		  </select>
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  </select></div>
 		<div class="form-group col-lg-12">
 	      <label for="num">Número de Tarjeta / Cuenta</label>
-		  <input type="number" class="form-control" id="num" name="num" placeholder="Número">
-		  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
+		  <input type="number" class="form-control" id="num" name="num" placeholder="Número"></div>
 	  </form>
+    </div>
+		<div class="col-xs-6 col-lg-12">
+    <br>
+    <canvas id="firma" width="600" height='200' style='border: 1px solid black'></canvas>
+    <br>
     </div>
     <div class="col-xs-6 col-lg-12">
     <br>
@@ -318,7 +259,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <p>Copyright © MyWebsite. All rights reserved.</p>
+        <p>Pulso</p>
       </div>
     </div>
   </div>
@@ -326,7 +267,8 @@
 <!-- / FOOTER -->
 <script src="js/jquery.js"></script> 
 <script src="js/bootstrap.js"></script>
+<script src="js/sketch.js"></script>
 <script src="js/my.js"></script>
-<script src="js/jquery.soap.js"></script> 
+<script src="js/jquery.soap.js"></script>
 </body>
 </html>
